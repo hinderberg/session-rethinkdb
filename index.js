@@ -42,7 +42,7 @@ module.exports = function (connect) {
 				debug('PRIOR STEP %j', result);
 				self.emit('connect');
 			});
-		})
+		});
 
 		self.clearInterval = setInterval(function () {
 			self.r.table(self.options.table)
